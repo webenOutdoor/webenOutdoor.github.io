@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chairs</title>
+    <style>
+        /* General styles */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+        }
+
+        h1 {
+            margin: 20px 0;
+            color: #333;
+            text-align: center;
+        }
+ 
+        .gallery-heading {
+        font-family: 'Arial', sans-serif;
+        font-size: 3em; /* Larger font size for emphasis */
+        color: #333;
+        text-align: center;
+        font-weight: bold;
+        letter-spacing: 2px; /* Slightly increase the spacing between letters */
+        text-transform: uppercase; /* Make the text uppercase for a bold look */
+        position: relative;
+        margin-bottom: 30px;
+        padding: 10px 0;
+        transition: transform 0.3s ease, color 0.3s ease;
+    }
+
+    .gallery-heading::before {
+        content: ''; /* Create a decorative line */
+        position: absolute;
+        width: 50%;
+        height: 4px;
+        background-color: #007bff; /* Blue line color */
+        left: 50%;
+        bottom: 0;
+        transform: translateX(-50%);
+    }
+
+    .gallery-heading:hover {
+        color: #0056b3; /* Change text color on hover */
+        transform: scale(1.1); /* Slight zoom effect on hover */
+    }
+
+    /* Animation for heading */
+    @keyframes headingAnimation {
+        0% {
+            transform: translateY(-30px);
+            opacity: 0;
+        }
+        100% {
+            transform: translateY(0);
+            opacity: 1;
+        }
+    }
+        /* Gallery container */
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr); /* 3 images per row */
+            gap: 90px;
+            padding: 60px;
+            max-width: 1200px;
+            margin: 0 auto; /* Center the gallery on the page */
+        }
+
+        /* Image styles */
+        .gallery img {
+            width: 100%; /* Make the images take the full width of their container */
+            height: 500px; /* Set a fixed height for uniformity */
+          
+            border-radius: 10px; /* Rounded corners for better aesthetics */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        /* Hover effect for images */
+        .gallery img:hover {
+            transform: scale(1.05); /* Slight zoom-in on hover */
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+        }
+
+        /* Back link styles */
+        .back-link {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        padding: 12px 20px;
+        margin: 20px auto;
+        font-size: 18px;
+        font-weight: bold;
+        color: #fff;
+        text-decoration: none;
+        background: linear-gradient(90deg, #007bff, #0056b3); /* Gradient background */
+        border-radius: 25px; /* Rounded edges for a button-like appearance */
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+        transition: transform 0.2s ease, box-shadow 0.3s ease, background 0.3s ease;
+    }
+
+    .back-link svg {
+        margin-right: 8px; /* Space between icon and text */
+        width: 20px;
+        height: 20px;
+        fill: #fff; /* Icon color */
+        transition: fill 0.3s ease;
+    }
+
+    .back-link:hover {
+        background: linear-gradient(90deg, #0056b3, #003d80); /* Darker gradient on hover */
+        box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); /* More pronounced shadow on hover */
+        transform: scale(1.05); /* Slight zoom effect */
+    }
+
+    .back-link:hover svg {
+        fill: #ffe600; /* Change icon color to yellow on hover */
+    }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .gallery {
+                grid-template-columns: repeat(2, 1fr); /* 2 images per row on smaller screens */
+            }
+
+            .gallery img {
+                height: 250px; /* Adjust image height for smaller screens */
+            }
+        }
+
+        @media (max-width: 480px) {
+            .gallery {
+                grid-template-columns: 1fr; /* 1 image per row on very small screens */
+            }
+
+            .gallery img {
+                height: 200px; /* Further reduce height for small screens */
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1 class="gallery-heading">Tables</h1>
+    <div class="gallery">
+        <img src="table1.png" alt="Chair 1">
+        <img src="table2.png" alt="Chair 2">
+        
+        
+    </div>
+    <a href="index.html" class="back-link" style="margin-left:610px;">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16">
+            <path d="M5.854 3.146a.5.5 0 0 1 0 .708L2.707 7h10.793a.5.5 0 0 1 0 1H2.707l3.147 3.146a.5.5 0 0 1-.708.708l-4-4a.5.5 0 0 1 0-.708l4-4a.5.5 0 0 1 .708 0z"/>
+        </svg>
+        Back to Dashboard
+    </a>
+</body>
+</html>

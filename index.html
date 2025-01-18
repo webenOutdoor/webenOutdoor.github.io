@@ -1,0 +1,1267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weben Outdoor Furniture</title>
+    <style>
+        /* Global Styles */
+        body {
+            font-family: 'Georgia', serif;
+            margin: 0;
+            padding: 0;
+            color: #444;
+            background-color: #fefefe;
+        }
+        header {
+            background-color: #ffffff;
+            border-bottom: 1px solid #ddd;
+            text-align: center;
+            padding: 30px 20px;
+            animation: fadeIn 1s ease-out;
+        }
+        .tagline-container {
+    text-align: center;
+}
+
+    /* Tagline styling */
+    .tagline {
+        font-family: 'Georgia', serif;
+        font-size: 20px;
+        color: grey/* Bright yellow to match the logo accent */
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        font-weight: bold;
+        text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+        animation: fadeIn 2s ease-out, zoomIn 2s ease-out; /* Apply multiple animations */
+    }
+
+        /* Keyframe for fade-in */
+        @keyframes fadeIn {
+            0% {
+                opacity: 0;
+            }
+            100% {
+                opacity: 1;
+            }
+        }
+
+        /* Keyframe for zoom-in effect */
+        @keyframes zoomIn {
+            0% {
+                transform: scale(0.8);
+            }
+            100% {
+                transform: scale(1);
+            }
+        }
+        header h1 {
+            font-size: 2.5em;
+            margin: 0;
+            color: #222;
+            font-weight: 600;
+        }
+        header p {
+            font-size: 1.2em;
+            margin: 10px 0 0;
+            color: #666;
+        }
+        .bottom-to-top {
+    width: 300px;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transform: translateY(100%); /* Start below the container */
+    animation: moveUp 2s ease-out forwards; /* Apply bottom-to-top animation */
+}
+
+/* Keyframes for Bottom-to-Top Movement */
+@keyframes moveUp {
+    0% {
+        transform: translateY(100%); /* Start below */
+        opacity: 0; /* Hidden initially */
+    }
+    100% {
+        transform: translateY(0); /* Final position */
+        opacity: 1; /* Fully visible */
+    }
+}
+
+        /* Navigation Styling */
+nav {
+  display: flex;
+  justify-content: center;  /* Center the items horizontally */
+  align-items: center;      /* Align items vertically */
+  background-color: #2C3E50;  /* Dark, formal background color */
+  padding: 15px 40px;       /* Padding around the menu */
+  position: sticky;         /* Keep the nav bar sticky on scroll */
+  top: 0;
+  z-index: 1000;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Shadow for floating effect */
+}
+
+/* Styling the links */
+nav a {
+  text-decoration: none;    /* Remove underlines */
+  color: white;             /* Text color */
+  font-size: 18px;          /* Font size */
+  font-family: 'Georgia', serif;
+  margin: 0 30px;           /* Space between the links */
+  text-transform: uppercase; /* Uppercase text */
+  letter-spacing: 1px;      /* Letter spacing */
+  display: flex;            /* Use flex to align text and icons */
+  align-items: center;      /* Align icon and text */
+  transition: all 0.3s ease; /* Smooth transition for hover effects */
+}
+
+/* Icons Styling */
+nav .nav-icon {
+  width: 20px;             /* Set a consistent icon size */
+  margin-right: 10px;      /* Space between the icon and the text */
+}
+
+/* Hover Effects */
+nav a:hover {
+  color: #3498DB; /* Change color on hover to blue */
+  transform: scale(1.05); /* Slightly enlarge the link */
+}
+
+/* Active link styling */
+nav a:active {
+  color: #3498DB; /* Active link color */
+  text-decoration: underline; /* Underline for active state */
+}
+
+/* Responsive Design for smaller screens */
+@media (max-width: 768px) {
+  nav {
+    flex-direction: column; /* Stack the links vertically */
+    padding: 20px;
+  }
+
+  nav a {
+    margin: 10px 0; /* Adjust spacing when stacked */
+    font-size: 20px; /* Increase font size for mobile */
+  }
+}
+
+
+        /* Hero Section */
+        .hero {
+            background-image: url('https://images.unsplash.com/photo-1559050044-5fdae0dd59f8');
+            background-size: cover;
+            background-position: center;
+            background: #636363; 
+            padding: 120px 20px;
+            text-align: left;
+            color: black;
+            background-color: white; 
+            /* Fallback for slow loading */
+            text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.5);
+            animation: slideIn 1.5s ease-out;
+            height: 270px !important;
+            margin-top: -90px;
+            margin-left: -400px;
+            width:600px ;
+        }
+        .hero h2 {
+            font-size: 3.2em;
+            margin: 0;
+            font-weight: 600;
+            animation: fadeUp 1s ease-out 0.5s;
+            animation-fill-mode: both;
+        }
+        .hero p {
+            font-size: 1.5em;
+            margin-top: 10px;
+            font-weight: 300;
+            animation: fadeUp 1s ease-out 1s;
+            animation-fill-mode: both;
+        }
+
+        /* Section Styling */
+        .section {
+            padding: 60px 20px;
+            text-align: center;
+            animation: fadeIn 1s ease-out;
+        }
+        .section h2 {
+            font-size: 2.2em;
+            margin-bottom: 20px;
+            color: #222;
+            font-weight: 600;
+        }
+        .section p {
+            font-size: 1.1em;
+            color: #666;
+            margin-bottom: 40px;
+        }
+
+        /* Card Styles */
+        /* Section Styling */
+#products {
+  padding: 60px 20px;
+  background: #636363; 
+ font-family: 'Poppins', sans-serif;
+ border-radius: 20px !important;
+}
+
+#products h2 {
+  font-size: 36px;
+  color: whitesmoke;
+  margin-bottom: 40px;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  text-align: center;
+}
+
+/* Grid Layout for Product Cards */
+.products {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 columns layout */
+  gap: 20px; /* Space between the items */
+  justify-items: center; /* Center the cards horizontally */
+}
+
+.card {
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: transform 0.3s ease;
+}
+
+.card img {
+  width: 100%;
+  height: auto;
+  border-bottom: 2px solid #ddd;
+}
+
+.card-content {
+  padding: 15px;
+  text-align: center;
+}
+
+.card h3 {
+  font-size: 20px;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.card p {
+  font-size: 16px;
+  color: #555;
+  line-height: 1.6;
+}
+
+/* Hover Effect for Cards */
+.card:hover {
+  transform: translateY(-10px); /* Lift the card on hover */
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2); /* Increase shadow */
+}
+
+/* Responsive Design for Smaller Screens */
+@media (max-width: 768px) {
+  .products {
+    grid-template-columns: 1fr 1fr; /* 2 columns layout on smaller screens */
+  }
+}
+
+@media (max-width: 480px) {
+  .products {
+    grid-template-columns: 1fr; /* 1 column layout on mobile screens */
+  }
+}
+
+        .card img {
+            width: 100%;
+            height: 300px !important;
+            display: block;
+            transition: transform 0.5s;
+        }
+        .card:hover img {
+            transform: scale(1.1);
+        }
+        .card-content {
+            padding: 20px;
+        }
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+        }
+        .card h3 {
+            font-size: 1.6em;
+            margin-bottom: 10px;
+            color: #007ACC;
+            font-weight: 600;
+        }
+        .card p {
+            font-size: 1em;
+            color: #555;
+            margin: 0;
+        }
+        .slider-container {
+  position: relative;
+  width: 50%;
+  max-width: 650px;
+  margin-top: -90px;
+  overflow: hidden;
+  
+border-radius: 20px;
+}
+.centered-list {
+  list-style-position: inside; /* Ensures the bullet stays close to the text */
+  list-style-type: disc; /* Adds a bullet point */
+  text-align: center; /* Centers the list items */
+  padding: 0; /* Removes default padding from the list */
+}
+#about ul {
+  /* list-style-type: disc; Adds bullet points */
+  padding-left: 20px;
+}
+
+#about ul li {
+  font-size: 20px;
+  line-height: 1.8;
+  color: #555;
+}
+
+#about ul li strong {
+  /* color: #000; Highlights key information in bold black */
+}
+
+.slider {
+  display: flex;
+  transition: transform 0.2s ease-in-out;
+}
+
+.slider img {
+  width: 190% !important;
+  flex-shrink: 0;
+  height: 420px !important;
+  width: 500px !important;
+
+}
+
+.arrows {
+  position: absolute;
+  bottom: 10px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.arrow-btn {
+  background: #007BFF;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  cursor: pointer;
+  font-size: 16px;
+  border-radius: 5px;
+  transition: background 0.3s;
+}
+
+.arrow-btn:hover {
+  background: #0056b3;
+}
+/* Section styling */
+#why-choose-weben {
+  margin: 40px auto;
+  padding: 30px;
+  /* background: #D4D4D4 ; Soft gradient background */
+  background: #636363;
+  border-radius: 15px; /* Rounded corners */
+  font-family: 'Georgia', serif;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  max-width: 1200px;
+}
+
+#why-choose-weben h2 {
+  font-size: 32px;
+  color: white;
+  text-align: center;
+  margin-bottom: 20px;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-family: 'Georgia', serif;
+}
+
+.features {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); /* Responsive grid */
+  gap: 30px;
+}
+
+.feature {
+  background-color: white;
+  padding: 25px;
+  border-radius: 15px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out; /* Hover effects */
+}
+
+.feature:hover {
+  transform: translateY(-5px); /* Slight upward movement */
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15); /* Stronger shadow on hover */
+}
+
+.feature h3 {
+  font-size: 22px;
+  color : black; /* Bold blue for headings */
+  margin-bottom: 15px;
+  font-weight: bold;
+}
+
+.feature p {
+  font-size: 16px;
+  color: #555;
+  line-height: 1.7;
+  font-family:  'Georgia', serif;
+}
+
+@media (max-width: 768px) {
+  #why-choose-weben {
+    padding: 20px;
+  }
+
+  .features {
+    grid-template-columns: 1fr; /* Stack the features vertically on small screens */
+  }
+}
+/* Section styling */
+#about {
+    background: #636363; 
+  padding: 50px 20px;
+  border-radius: 15px;
+  font-family:  'Roboto', sans-serif;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.about-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+h2 {
+  font-size: 32px;
+  color: whitesmoke;
+  margin-bottom: 20px;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.intro-text {
+  font-size: 19px;
+  color: #555;
+  margin-bottom: 40px;
+  line-height: 1.6;
+  
+}
+
+.about-list {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr; /* Two-column layout */
+  gap: 20px;
+}
+
+.about-list li {
+  font-size: 16px;
+  color:whitesmoke;
+  background-color: #fff;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Hover effect */
+}
+
+.about-list li:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+@media (max-width: 768px) {
+  .about-list {
+    grid-template-columns: 1fr; /* Stack items on smaller screens */
+  }
+}
+
+
+#how-it-started {
+  margin: 30px;
+  padding: 20px;
+  background: #636363
+  border-radius: 8px;
+  font-family: 'Roboto', sans-serif; 
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  width: 600px !important;
+ 
+}
+
+#how-it-started h2 {
+  /* font-size: 28px;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 15px; */
+  font-family: 'Playfair Display', serif; /* Replace with the chosen font for the heading */
+  font-size: 36px;
+  color: #007BFF;
+  margin-bottom: 20px;
+  text-align: center;
+  font-weight: bold;
+}
+
+#how-it-started p {
+  font-size: 16px;
+  line-height: 1.8;
+  color: #555;
+  text-align: justify; /* Aligns text neatly */
+}
+/* Section Styling */
+/* Section Styling */
+#primed-processes {
+  background: #636363; /* Soft gradient background */
+  padding: 20px 10px;
+  border-radius: 15px;
+  font-family: 'Georgia', serif;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  margin-bottom: 30px;
+}
+
+.process-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+#primed-processes h2 {
+  font-size: 32px;
+  color: white;
+  margin-bottom: 40px;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+}
+
+.processes {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); /* Responsive grid */
+  gap: 20px;
+}
+
+.process {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  text-align: left;
+  opacity: 0; /* Start with hidden elements */
+  transform: translateY(30px); /* Start from below */
+  animation: slideIn 0.8s forwards; /* Apply the animation */
+}
+
+/* Animation for the processes */
+@keyframes slideIn {
+  0% {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Staggering animation delay */
+.process:nth-child(1) {
+  animation-delay: 0.2s; /* 1st process appears first */
+}
+
+.process:nth-child(2) {
+  animation-delay: 0.4s; /* 2nd process appears after 0.4s */
+}
+
+.process:nth-child(3) {
+  animation-delay: 0.6s; /* 3rd process appears after 0.6s */
+}
+
+.process:nth-child(4) {
+  animation-delay: 0.8s; /* 4th process appears after 0.8s */
+}
+
+.process:nth-child(5) {
+  animation-delay: 1s; /* 5th process appears after 1s */
+}
+
+.process:nth-child(6) {
+  animation-delay: 1.2s; /* 6th process appears after 1.2s */
+}
+
+.process:hover {
+  transform: translateY(-5px); /* Hover effect to lift the card */
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+}
+
+.process i {
+  font-size: 40px;
+  color:black;/* Icon color */
+  margin-bottom: 15px;
+}
+
+.process h3 {
+  font-size: 20px;
+  color: black; /* Heading color */
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.process p {
+  font-size: 16px;
+  color: #555;
+  line-height: 1.7;
+}
+.process-image {
+  width: 100%;
+  max-width: 600px; /* Limit the max width */
+  margin: 0 auto 30px; /* Center the image */
+  opacity: 0; /* Initially hidden */
+  transform: scale(0.8) translateY(50px); /* Start with zoomed-out and downward position */
+  animation: zoomInSlideUp 1s ease-out forwards, pulseEffect 5s ease-in-out infinite; /* Apply both animations */
+}
+
+/* Animation for the image: Zoom-in and Slide-up */
+@keyframes zoomInSlideUp {
+  0% {
+    opacity: 0;
+    transform: scale(0.8) translateY(50px); /* Small and below */
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1) translateY(0); /* Normal size and centered */
+  }
+}
+
+/* Continuous Pulse Animation */
+@keyframes pulseEffect {
+  0% {
+    transform: scale(1) translateY(0); /* Normal size */
+  }
+  50% {
+    transform: scale(1.05) translateY(-5px); /* Slight zoom in and upward */
+  }
+  100% {
+    transform: scale(1) translateY(0); /* Back to normal size */
+  }
+}
+
+@media (max-width: 768px) {
+  #primed-processes {
+    padding: 30px 15px;
+  }
+
+  .processes {
+    grid-template-columns: 1fr; /* Stack items on smaller screens */
+  }
+}
+
+
+/* Define the animation for the heading */
+@keyframes slideInFromTop {
+  0% {
+    opacity: 0; /* Start fully transparent */
+    transform: translateY(-30px); /* Move slightly above its final position */
+  }
+  100% {
+    opacity: 1; /* Fully visible */
+    transform: translateY(0); /* At the final position */
+  }
+}
+
+/* Apply the animation to the heading */
+.slide-in-animation {
+  opacity: 0; /* Start invisible */
+  animation: slideInFromTop 1s ease-out forwards; /* Animation name, duration, easing, and fill mode */
+}
+
+
+/* Define the animation */
+@keyframes fadeInFromBack {
+  0% {
+    opacity: 0;          /* Fully transparent */
+    transform: scale(0.8); /* Slightly smaller */
+  }
+  100% {
+    opacity: 1;          /* Fully visible */
+    transform: scale(1);   /* Normal size */
+  }
+}
+
+/* Apply the animation to the paragraph */
+.fade-in-animation {
+  opacity: 0; /* Start invisible */
+  animation: fadeInFromBack 1.5s ease-out forwards; /* Animation name, duration, easing, and fill mode */
+}
+/* General Styling for Contact Section */
+#contact {
+    background: #636363;
+  padding: 60px 20px;
+  border-radius: 25px;
+  font-family: 'Arial', sans-serif;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  margin-top: 30px;
+}
+
+#contact h2 {
+  font-size: 36px;
+  color: white;
+  margin-bottom: 40px;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-family: 'Roboto', sans-serif;
+}
+
+/* Styling the contact information */
+.contact-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+/* Contact Item Styling */
+.contact-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  max-width: 700px;
+  padding: 15px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  font-size: 18px;
+  color: #333;
+}
+
+.contact-item:hover {
+  transform: translateY(-8px); /* Subtle lifting effect on hover */
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2); /* Increased shadow on hover */
+}
+
+/* Styling for icons */
+.contact-item i {
+  font-size: 24px;
+  color: #007B}
+  /* General Section Styling */
+#clients {
+    background: #636363;/* Light gray background for a formal look */
+  padding: 60px 20px;
+  text-align: center;
+  border-radius: 20px;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+  margin-bottom: 30px;
+  margin-top: 30px;
+}
+
+#clients h2 {
+  font-size: 36px;
+  color: white;
+  margin-bottom: 40px;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-family: 'Roboto', sans-serif;
+}
+
+/* Client Cards Layout */
+.clients {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 columns on large screens */
+  gap: 30px; /* Space between the cards */
+  justify-items: center;
+  align-items: center;
+}
+
+.card {
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  opacity: 0; /* Cards start hidden for animation */
+  transform: translateY(20px); /* Cards start from below */
+  animation: fadeInUp 0.8s forwards; /* Fade-in animation for each card */
+}
+
+.card img {
+  width: 100%;
+  height: auto;
+  /* object-fit: cover; */
+}
+
+.card-content {
+  padding: 20px;
+  text-align: center;
+}
+
+/* Card Title Styling */
+.card h3 {
+  font-size: 22px;
+  color: #333;
+  margin-bottom: 10px;
+  font-weight: bold;
+  font-family: 'Roboto', sans-serif;
+}
+
+/* Card Description Styling */
+.card p {
+  font-size: 16px;
+  color: #555;
+  line-height: 1.6;
+  font-family: 'Arial', sans-serif;
+}
+
+/* Fade-in and Slide-up Animation for Cards */
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Hover Effect for Cards */
+.card:hover {
+  transform: translateY(-8px); /* Lift the card on hover */
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2); /* Increase shadow for 3D effect */
+}
+
+/* Responsive Design for Smaller Screens */
+@media (max-width: 768px) {
+  .clients {
+    grid-template-columns: 1fr 1fr; /* 2 columns on smaller screens */
+  }
+
+  .card {
+    max-width: 90%;
+  }
+}
+
+@media (max-width: 480px) {
+  .clients {
+    grid-template-columns: 1fr; /* 1 column layout for mobile screens */
+  }
+
+  #clients h2 {
+    font-size: 28px; /* Adjust font size for mobile screens */
+  }
+}
+#materials {
+        padding: 40px 20px;
+        background-color: #636363;
+        text-align: center;
+        border-radius: 25px;
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+
+    .container {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 20px;
+    }
+
+    .common-heading {
+        font-size: 2.5em;
+        color: white;
+        margin-bottom: 40px; /* Space between common heading and content */
+        font-family: 'Poppins', sans-serif;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        margin-top: -20px;
+        margin-bottom: 50px !important;
+        
+    }
+
+    .row {
+        display: flex;
+        justify-content: space-between;
+        gap: 40px; /* Space between the two sections */
+    }
+
+    .material, .fabric {
+        flex: 1;
+        background-color: #fff;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    .section-heading {
+        font-size: 2.2em;
+        color: black;
+        margin-bottom: 20px;
+        font-family: 'Poppins', sans-serif;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        text-align: center;
+    }
+
+    .material-description, .fabric-description {
+        font-size: 1.2em;
+        color: #444;
+        line-height: 1.6;
+        font-family: 'Arial', sans-serif;
+        transition: color 0.3s ease, transform 0.3s ease;
+    }
+
+    .material-description:hover, .fabric-description:hover {
+        color: #0056b3;
+        transform: translateY(-10px); /* Subtle upward movement on hover */
+    }
+
+    /* Container Hover Effects */
+    .material:hover, .fabric:hover {
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+        transform: translateY(-5px); /* Slight upward movement */
+    }
+
+
+
+
+        /* Footer */
+        footer {
+            background-color: #f9f9f9;
+            border-top: 1px solid #ddd;
+            text-align: center;
+            padding: 20px;
+            font-size: 0.9em;
+            color: #666;
+            animation: fadeIn 1s ease-out;
+        }
+        footer p {
+            margin: 0;
+        }
+
+        /* Animations */
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+        @keyframes slideIn {
+            from {
+                transform: translateY(-30px);
+                opacity: 0;
+            }
+            to {
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+        @keyframes fadeUp {
+            from {
+                transform: translateY(30px);
+                opacity: 0;
+            }
+            to {
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <!-- <h1>Weben Outdoor Furniture</h1> -->
+         <img src="logo.png" style="height: 50px; width: 200px;">
+      
+        <!-- <h1 style="font-size:22px; font-weight: 500;">Innovate, Design & Create</h1> -->
+        <!-- <div class="tagline-container">
+            <p class="tagline">Innovate Design Create.</p>
+        </div> -->
+    </header>
+    <nav>
+        <a href="#about">
+          <!-- <img src="about.png" alt="About Us" class="nav-icon" /> -->
+          About Us
+        </a>
+        <a href="#products">
+          <!-- <img src="products.png" alt="Products" class="nav-icon" /> -->
+          Products
+        </a>
+        <a href="#clients">
+          <!-- <img src="clients.png" alt="Our Clients" class="nav-icon" /> -->
+          Our Clients
+        </a>
+        <a href="#contact">
+          <!-- <img src="contact.png" alt="Contact" class="nav-icon" /> -->
+          Contact
+        </a>
+      </nav>
+      
+
+
+    <div>
+    <div class="hero" style="margin-top: 30px; width:1270px; border-radius: 20px; margin-left:10px; position: relative; background-color: #D3D3D3;">
+        <!-- <h2 style="margin-top:-70px; ">Transforming Outdoor Spaces</h2>
+        <p>With innovative designs and premium craftsmanship</p> -->
+        <!-- <img src="chair.png" height="250" width="1150" class="bottom-to-top" style="width: 400px !important; height: 250px !important;"> -->
+        <div class="slider-container" style="margin-left: 730px !important; position: absolute; right: 270px; width: 600px;">
+            <div class="slider">
+                <img src="homeImg.png" alt="Image 2" height="550px" style="width: 550px !important; height: 450px !important; border-radius: 25px;">
+             
+              <!-- <img src="main_pg2.jpg" alt="Image 2" height="550px" style="width: 550px !important; height: 450px !important;"> -->
+              <!-- <img src="img3.png" alt="Image 3" height="550px" style="width: 650px !important; height: 450px !important;">
+              <img src="img4.png" alt="Image 4" height="550px"  style="width: 650px !important; height: 450px !important;">
+              <img src="img5.png" alt="Image 4" height="550px"  style="width: 650px !important; height: 450px !important;">
+              <img src="img6.png" alt="Image 4" height="550px"  style="width: 650px !important;">
+              <img src="img7.png" alt="Image 4" height="550px"  style="width: 650px !important;">
+              <img src="img8.png" alt="Image 4" height="550px"  style="width: 650px !important;">
+              <img src="img9.png" alt="Image 4" height="550px"  style="width: 650px !important;"> -->
+            </div>
+           
+    </div>
+    </div>
+</div>
+    <div style="display: flex; ">
+    <section id="how-it-started" style="background-color: #636363 ;  border-radius: 7px;">
+        <h2 class="slide-in-animation" style="color: white">How It Started</h2>
+        <p class="fade-in-animation" style="color: white">
+          Founded in 2007 by Jeetendra Bamboli, Weben began as a small office chair manufacturing unit. A pivotal moment came 15 years ago when a suggestion to use wicker for chairs inspired a game-changing shift to outdoor furniture. Driven by this vision, Jeetendra collaborated with architects and designers, leading to innovative projects like patented wicker baskets for modular kitchens. Within two years, the product gained nationwide success, marking the beginning of Weben’s journey to becoming a leader in premium outdoor furniture.
+        </p>
+      </section>
+      <section id="how-it-started" style="background-color: #636363;border-radius: 7px;">
+        <h2 class="slide-in-animation" style="color: white">Today at Weben</h2>
+        <p class="fade-in-animation" style="color: white">
+            Today, Weben Outdoor is an Indian company 
+            specialised in designing and manufacture of 
+            Outdoor furniture with proven excellence.
+            Presently, Weben Outdoor offers an ever expanding range of outdoor 
+            furniture solutions customised to suit every need for 
+            hospitality, recreational and discerning private patrons.
+            
+        </p>
+      </section>
+    </div>
+
+    <section id="why-choose-weben">
+        <h2 style="margin-bottom: 50px;">Why Choose Weben?</h2>
+        <div class="features">
+          <div class="feature">
+            <h3>Skilled Workforce</h3>
+            <p>30 skilled artisans and craftsmen specializing in metal bending, welding, weaving, carpentry, and cushion making.</p>
+          </div>
+          <div class="feature">
+            <h3>Flawless Metalwork</h3>
+            <p>Automated bending of Jindal-made Aluminium pipes (1.6 mm+ thickness) ensures wrinkle-free finishes. High-grade welding rods used for superior structural strength.</p>
+          </div>
+          <div class="feature">
+            <h3>Durable Materials</h3>
+            <p>Use of non-corrosive aluminium for frames with extended lifespans.</p>
+          </div>
+          <div class="feature">
+            <h3>In-House Wood Unit</h3>
+            <p>Integration of metal, wicker, and wood for seamless and harmonized products.</p>
+          </div>
+          <div class="feature">
+            <h3>Innovative Design Team</h3>
+            <p>Regularly creates unique and astonishing designs.</p>
+          </div>
+          <div class="feature">
+            <h3>Dedicated R&D Department</h3>
+            <p>Focused on quality control and continuous improvement.</p>
+          </div>
+        </div>
+      </section>
+     <section id="primed-processes">
+  <div class="process-container">
+    <h2>Pioneering Production Methods</h2>
+    <!-- Image below the heading with animation -->
+    <img src="processes.png" alt="Processes" class="process-image" style="margin-top: 10px; margin-bottom: 40px; width: 1050px !important;"/>
+
+    <div class="processes">
+      <div class="process">
+        <i class="fas fa-paint-roller"></i> <!-- Icon for oil treatment -->
+        <h3>Wooden Pieces Treatment</h3>
+        <p>For outdoor applications, the wooden pieces undergo a special oil treatment, enhancing their resilience.</p>
+      </div>
+      <div class="process">
+        <i class="fas fa-tint"></i> <!-- Icon for chemical treatment -->
+        <h3>Aluminium Frame Treatment</h3>
+        <p>The aluminium frames undergo a seven-tank chemical treatment, concluding with a durable outdoor-specific powder coating resistant to sunlight and rain.</p>
+      </div>
+      <div class="process">
+        <i class="fas fa-cogs"></i> <!-- Icon for wicker weaving -->
+        <h3>Wicker Weaving</h3>
+        <p>The craftsmen meticulously weave Rehau wicker for its unparalleled tensile strength, guaranteeing damage-free, worry-free experiences for customers.</p>
+      </div>
+      <div class="process">
+        <i class="fas fa-puzzle-piece"></i> <!-- Icon for cushion making -->
+        <h3>Cushion Crafting</h3>
+        <p>Skilled in molding shapes on PU foams and precision stitching, the in-house cushion makers elevate the final presentation of the seating area.</p>
+      </div>
+     
+    </div>
+  </div>
+</section>
+
+<section id="materials" class="section">
+    <div class="container">
+        <!-- Common Heading -->
+        <h2 class="common-heading" style="color: white;  font-family: 'Georgia', serif;">Premium Materials We Use</h2>
+
+        <div class="row">
+            <!-- Rehau Wicker Section -->
+            <div class="material">
+                <h3 class="section-heading">Rehau Wicker: Premium Durability</h3>
+                <p class="material-description">
+                    Weben Outdoor Furniture features <strong>Rehau Wicker</strong>, made from <strong>Raucord</strong>, a premium synthetic weaving material known for its superior durability and weather resistance. Manufactured with German engineering, Raucord is UV-resistant, temperature-proof, and designed to withstand the elements for 10-12 years. It’s eco-friendly, easy to clean, and maintenance-free, ensuring a carefree outdoor experience. Available in multiple colors and patterns, it’s the perfect blend of innovation and style for both outdoor and indoor furniture.
+                </p>
+            </div>
+
+            <!-- UV Rays Resistant Cushion Fabric Section -->
+            <div class="fabric">
+                <h3 class="section-heading">UV Rays Resistant Cushion Fabric</h3>
+                <p class="fabric-description">
+                    <strong>UV Rays Resistant Cushion Fabric</strong> offers a wide selection of colors and textures, complemented by durable outdoor-resistant braided ropes and straps. Featuring top-quality fabrics from <strong>Agora (Spain)</strong> and <strong>Sunbrella (USA)</strong>, paired with <strong>Quick Dry Foam</strong>, these cushions are built to withstand the toughest weather challenges. Designed for superior strength, easy care, and long-lasting durability, they resist fading and degradation from sunlight exposure, ensuring a fresh, vibrant look for years. Backed by a 5-year warranty, our cushions provide both comfort and resilience.
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+      
+      
+
+      <section id="about" class="section">
+        <div class="about-container">
+          <h2 style="color: whitesmoke;margin-top: -20px; margin-bottom: 40px;">About Us</h2>
+          <p class="intro-text" style="color: whitesmoke;">
+            Weben Outdoor, a leading outdoor furniture brand, operates a 5000 sq. ft. state-of-the-art manufacturing unit in Pisoli, Pune. Combining advanced technology, creative design, and expert craftsmanship, our 30 skilled artisans specialize in metal bending, welding, weaving, carpentry, and cushion making. With high-quality materials like Jindal aluminium pipes and in-house woodwork, we ensure durable, non-corrosive, and aesthetically superior furniture. Our dedicated design and R&D teams consistently deliver innovative creations while maintaining stringent quality standards.
+          </p>
+        
+          <!-- <ul class="about-list">
+            <li>Founded in 2007 by Jeetendra Bamboli as a small office chair manufacturing unit.</li>
+            <li>A chance meeting with a sales executive from Rehau inspired the use of wicker for chair manufacturing.</li>
+            <li>Strategically shifted from office chairs to outdoor furniture.</li>
+            <li>Collaborated with architects and interior designers to initiate breakthrough projects.</li>
+            <li>Developed and patented wicker baskets for modular kitchens, achieving nationwide success within two years.</li>
+            <li>Today, Weben is a trusted Indian brand specializing in the design and manufacture of premium outdoor furniture.</li>
+          </ul> -->
+        </div>
+      </section>
+      <br>
+   
+
+      <section id="products" class="section">
+        <div class="about-container" style="border-radius: 20px;">
+        <h2 style="margin-top: -20px; margin-bottom: 50px;">Our Products</h2>
+        <div class="products">
+          <!-- Product Card 1 -->
+          <div class="card">
+            <img src="chairs_category.png" alt="Sofa Set">
+            <div class="card-content">
+                <a href="chairs.htm"> <h3 style="color: #007BFF;">Chairs</h3></a>
+            <p style="font-style: italic;">"Add a touch of elegance to your spaces with our versatile chairs. Whether for dining, lounging, or accenting your interiors, these chairs combine timeless style with exceptional functionality."</p>
+            </div>
+          </div>
+          <!-- Product Card 2 -->
+          <div class="card">
+            <img src="sofa_category.png" alt="Gazebo">
+            <div class="card-content">
+              
+              <a href="sofas.htm"> <h3 style="color: #007BFF;" id="sofas">Sofas</h3></a>
+              <p style="font-style: italic;">"Crafted with the finest materials, our sofas are built to last. Discover unmatched quality, comfort, and design in every piece."</p>
+            </div>
+          </div>
+          <!-- Product Card 3 -->
+          <div class="card">
+            <img src="swing_category.png" alt="Swimming Pool Lounger" height="200px" width="250px">
+            <div class="card-content">
+                <a href="swings.htm"> <h3 style="color: #007BFF;">Swings</h3></a>
+              <p style="font-style: italic;">"Bring relaxation and joy to your space with our elegant swings. Designed for comfort and style, these swings are perfect for outdoor gardens, patios, or cozy indoor corners."</p>
+            </div>
+          </div>
+      
+          <!-- Product Card 4 -->
+          <div class="card">
+            <img src="lamp_category.png" alt="Sofa Set">
+            <div class="card-content">
+                <a href="lamps.htm"> <h3 style="color: #007BFF;">Lamps</h3></a>
+              <p style="font-style: italic;">"Illuminate your surroundings with our exquisite lamps. From modern minimalistic designs to vintage-inspired styles, Crafted with attention to detail, they create the perfect ambiance for your evenings."</p>
+            </div>
+          </div>
+          <!-- Product Card 5 -->
+          <div class="card">
+            <img src="table_category.png" alt="Gazebo">
+            <div class="card-content">
+                <a href="tables.htm"> <h3 style="color: #007BFF;">Tables</h3></a>
+              <p style="font-style: italic;">"Complete your living or outdoor space with our versatile tables. Whether for dining, coffee, or decorative purposes, our tables offer functionality with impeccable design."</p>
+            </div>
+          </div>
+        </div> 
+         
+      
+         
+         
+         
+        </div>
+      </section>
+      
+
+     
+      
+
+    <section id="contact" class="section">
+        <h2 style="margin-top: -20px;">Contact Us</h2>
+        <div class="contact-info">
+          <!-- <div class="contact-item">
+            <i class="fas fa-map-marker-alt"></i> 
+            <div class="contact-text">
+              <strong>Address:</strong> Comfort Zone, Shop No. 32/2A/5, Opp. Elica, Near Hotel Balaji Veg, Kondhwa Budruk, Pisoli, Pune-411048
+            </div>
+          </div>
+          <div class="contact-item">
+            <i class="fas fa-phone-alt"></i> 
+            <div class="contact-text">
+              <strong>Phone:</strong> +91 9822522501
+            </div>
+          </div>
+          <div class="contact-item">
+            <i class="fas fa-envelope"></i> 
+            <div class="contact-text">
+              <strong>Email:</strong> webenoutdoorfurniture@gmail.com
+            </div> -->
+
+            <img src="contact_us.png" alt="contact" style="border-radius: 25px; margin-left: 80px;">
+          </div>
+        </div>
+      </section>
+
+   
+      
+
+    <footer>
+        <p>&copy; 2025 Weben Outdoor Furniture. All rights reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
